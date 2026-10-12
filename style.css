@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    background: #121211;
+    color: #f2eee7;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #c5a775;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.encabezado {
+    padding: 18px 7%;
+    background: #1c1b19;
+    border-bottom: 1px solid #3b3935;
+}
+
+.marca {
+    display: inline-block;
+    margin-right: 50px;
+    color: #f2eee7;
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.marca small {
+    display: block;
+    color: #b9b2a8;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.navegacion {
+    display: inline-block;
+}
+
+.navegacion a {
+    margin-right: 24px;
+    color: #b9b2a8;
+}
+
+.navegacion a:hover,
+.navegacion .actual {
+    color: #c5a775;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #c5a775;
+    color: #171512;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+h1 em,
+h2 em {
+    color: #c5a775;
+}
+
+.contenedor {
+    width: 86%;
+    max-width: 1050px;
+    margin: 50px auto;
+}
+
+.sobretitulo {
+    color: #c5a775;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+#portada {
+    display: flex;
+    align-items: center;
+    background: #1c1b19;
+}
+
+#texto-portada,
+#imagen-portada {
+    width: 50%;
+}
+
+#texto-portada {
+    padding: 45px 7%;
+}
+
+#texto-portada h1,
+.introduccion h1 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+#imagen-portada {
+    height: 500px;
+    object-fit: cover;
+}
+
+#bienvenida {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bienvenida h2,
+#bienvenida p {
+    width: 48%;
+}
+
+#colecciones {
+    display: flex;
+    gap: 18px;
+}
+
+.tarjeta {
+    flex: 1;
+    padding: 22px;
+    border: 1px solid #3b3935;
+    background: #1c1b19;
+}
+
+.tarjeta h2 {
+    color: #c5a775;
+}
+
+.introduccion {
+    padding: 55px 10%;
+    background: #1c1b19;
+    text-align: center;
+}
+
+#historia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#imagen-historia {
+    width: 48%;
+    height: 380px;
+    object-fit: cover;
+}
+
+#texto-historia {
+    width: 48%;
+}
+
+#valores {
+    display: flex;
+    gap: 18px;
+    padding: 35px 7%;
+    background: #1c1b19;
+}
+
+#anillos,
+#collares {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 4px;
+    border-bottom: 1px solid #3b3935;
+}
+
+.producto p {
+    margin: 0;
+    color: #b9b2a8;
+}
+
+.precio {
+    color: #c5a775;
+}
+
+#pulseras {
+    display: flex;
+    background: #1c1b19;
+}
+
+#imagen-pulseras,
+#texto-pulseras {
+    width: 50%;
+}
+
+#imagen-pulseras {
+    height: 340px;
+    object-fit: cover;
+}
+
+#texto-pulseras {
+    padding: 35px 6%;
+}
+
+#contacto {
+    display: flex;
+    gap: 4%;
+    padding: 45px 7%;
+}
+
+#datos-contacto,
+#formulario {
+    width: 48%;
+}
+
+#formulario {
+    padding: 25px;
+    background: #1c1b19;
+}
+
+#formulario label {
+    display: block;
+    margin-top: 12px;
+}
+
+#formulario input,
+#formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3b3935;
+    background: #121211;
+    color: #f2eee7;
+}
+
+.pie {
+    padding: 20px 7%;
+    background: #1c1b19;
+    color: #b9b2a8;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .marca {
+        margin-bottom: 12px;
+    }
+
+    .navegacion a {
+        margin-right: 12px;
+        font-size: 14px;
+    }
+
+    #portada,
+    #bienvenida,
+    #colecciones,
+    #historia,
+    #valores,
+    #pulseras,
+    #contacto {
+        display: block;
+    }
+
+    #texto-portada,
+    #imagen-portada,
+    #bienvenida > *,
+    #imagen-historia,
+    #texto-historia,
+    #imagen-pulseras,
+    #texto-pulseras,
+    #datos-contacto,
+    #formulario {
+        width: 100%;
+    }
+
+    #imagen-portada,
+    #imagen-historia,
+    #imagen-pulseras {
+        height: 300px;
+    }
+
+    .tarjeta {
+        margin-bottom: 14px;
+    }
+
+    #formulario {
+        margin-top: 25px;
+    }
+}

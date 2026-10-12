@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto | UrJewels</title>
+</head>
+<body>
+    <header class="encabezado">
+        <a class="marca" href="Inicio.html">UrJewels<small>Joyería masculina</small></a>
+        <nav class="navegacion">
+            <a href="Inicio.html">Inicio</a>
+            <a href="Sobre nosotros.html">La marca</a>
+            <a href="Producto.html">Colección</a>
+            <a class="actual" href="Contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduccion-contacto" class="introduccion">
+            <p class="sobretitulo">Contacto</p>
+            <h1>¿Hablamos de <em>joyería?</em></h1>
+            <p>Escríbenos si tienes preguntas sobre tallas, materiales o pedidos.</p>
+        </section>
+
+        <section id="contacto" class="contenedor">
+            <div id="datos-contacto">
+                <h2>Visítanos</h2>
+                <p>Carrer de Colón, 24<br>46004 València</p>
+                <p>Lunes a viernes · 10:00–19:00<br>Sábado · 10:00–14:00</p>
+                <p><a href="mailto:hola@UrJewels.es">hola@UrJewels.es</a><br><a href="tel:+34961234567">+34 961 23 45 67</a></p>
+            </div>
+
+            <form id="formulario">
+                <h2>Envíanos un mensaje</h2>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" required>
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" name="correo" type="email" required>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button class="boton" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">UrJewels · Joyería masculina · © 2026</footer>
+</body>
+</html>
